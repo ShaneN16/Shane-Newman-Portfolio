@@ -77,6 +77,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
       padding: 120px 48px 80px;
       position: relative;
       overflow: hidden;
@@ -121,19 +123,55 @@
     }
 
     .hero-statement {
-      max-width: 640px;
+      max-width: 680px;
       font-size: 1rem;
       color: var(--grey);
       line-height: 1.9;
       margin-bottom: 56px;
       border-left: 2px solid var(--gold);
       padding-left: 24px;
+      text-align: left;
     }
 
     .hero-cta {
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hero-stats {
+      display: flex;
+      width: 100%;
+      max-width: 900px;
+      margin-top: 64px;
+      border: 1px solid var(--divider);
+    }
+
+    .hero-stat {
+      flex: 1;
+      padding: 28px 16px;
+      text-align: center;
+      border-right: 1px solid var(--divider);
+    }
+
+    .hero-stat:last-child { border-right: none; }
+
+    .hero-stat-val {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .hero-stat-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--grey);
+      font-weight: 500;
     }
 
     .btn-primary {
@@ -608,7 +646,7 @@
   <!-- HERO -->
   <section id="home" style="max-width:100%; padding-left:48px; padding-right:48px;">
     <p class="hero-eyebrow">MGMT496 Capstone E-Portfolio</p>
-    <h1 class="hero-name">Shane E.<br>Newman</h1>
+    <h1 class="hero-name" style="font-size:clamp(2.8rem,6vw,5.5rem);">Shane E. Newman</h1>
     <p class="hero-title">Operations Management Professional</p>
     <p class="hero-statement">
       Focused on improving systems, developing accountable teams, and driving measurable organizational performance. I use strategic planning, process improvement, and disciplined execution to help organizations increase efficiency, strengthen reliability, and achieve sustainable results.
@@ -616,6 +654,25 @@
     <div class="hero-cta">
       <a href="#about" class="btn-primary">View Portfolio</a>
       <a href="#contact" class="btn-secondary">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <p class="hero-stat-val">22+</p>
+        <p class="hero-stat-label">Years of Leadership</p>
+      </div>
+      <div class="hero-stat">
+        <p class="hero-stat-val">500</p>
+        <p class="hero-stat-label">Personnel Led</p>
+      </div>
+      <div class="hero-stat">
+        <p class="hero-stat-val">$372M</p>
+        <p class="hero-stat-label">Assets Managed</p>
+      </div>
+      <div class="hero-stat">
+        <p class="hero-stat-val">$800K</p>
+        <p class="hero-stat-label">Cost Avoidance</p>
+      </div>
+
     </div>
     <div class="hero-rule"></div>
   </section>
@@ -877,7 +934,7 @@
     <h2 class="section-title fade-in">Academic &amp; Professional<br>Development</h2>
 
     <div class="edu-entry fade-in">
-      <p class="edu-year">2026</p>
+      <p class="edu-year" style="font-size:1.2rem;">2026</p>
       <div class="edu-details">
         <h3>Bachelor of Arts in Management</h3>
         <p class="edu-school">American Military University</p>
@@ -895,7 +952,7 @@
     </div>
 
     <div class="edu-entry fade-in">
-      <p class="edu-year" style="font-size:1.2rem;">Sel.</p>
+      <p class="edu-year" style="font-size:1.2rem;">2024</p>
       <div class="edu-details">
         <h3>U.S. Navy Senior Enlisted Academy &mdash; Distinguished Graduate</h3>
         <p class="edu-school">United States Navy</p>
