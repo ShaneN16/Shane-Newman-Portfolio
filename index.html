@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shane E. Newman | Operations &amp; Strategy Leader</title>
+  <meta name="description" content="Shane E. Newman is an operations and strategy leader with 22 years of experience building accountable teams, redesigning institutional processes, and delivering measurable results." />
+  <meta property="og:title" content="Shane E. Newman | Operations &amp; Strategy Leader" />
+  <meta property="og:description" content="22 years leading operations, logistics, and workforce development. Builder of teams, systems, and standards that outlast their author." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shanen16.github.io/Shane-Newman-Portfolio/" />
+  <meta property="og:image" content="https://shanen16.github.io/Shane-Newman-Portfolio/og-thumbnail.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shane E. Newman | Operations &amp; Strategy Leader" />
+  <meta name="twitter:description" content="22 years leading operations, logistics, and workforce development. Builder of teams, systems, and standards that outlast their author." />
+  <meta name="twitter:image" content="https://shanen16.github.io/Shane-Newman-Portfolio/og-thumbnail.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --navy: #0b1522;
+      --navy-mid: #121e2e;
+      --navy-light: #1b2c42;
+      --gold: #c8a96e;
+      --gold-light: #dfc28e;
+      --white: #f2eee7;
+      --grey: #8c9bae;
+      --brick: #b06a4d;
+      --divider: rgba(200, 169, 110, 0.22);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+
+    .mono {
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(11, 21, 34, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--divider);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 48px;
+      height: 64px;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--grey);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--divider);
+      color: var(--gold);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    #home {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 120px 48px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #home::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 70% 40%, rgba(200,169,110,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse at 20% 80%, rgba(27,44,66,0.8) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    .hero-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 6vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1.0;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      font-weight: 400;
+      color: var(--gold-light);
+      margin-bottom: 40px;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-statement {
+      max-width: 680px;
+      font-size: 1rem;
+      color: var(--grey);
+      line-height: 1.9;
+      margin-bottom: 56px;
+      border-left: 2px solid var(--gold);
+      padding-left: 24px;
+      text-align: left;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hero-stats {
+      display: flex;
+      width: 100%;
+      max-width: 900px;
+      margin-top: 64px;
+      border: 1px solid var(--divider);
+    }
+
+    .hero-stat {
+      flex: 1;
+      padding: 28px 16px;
+      text-align: center;
+      border-right: 1px solid var(--divider);
+    }
+
+    .hero-stat:last-child { border-right: none; }
+
+    .hero-stat-val {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .hero-stat-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--grey);
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 14px 36px;
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+    .btn-secondary {
+      display: inline-block;
+      padding: 14px 36px;
+      border: 1px solid var(--divider);
+      color: var(--grey);
+      text-decoration: none;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+    .btn-outline-gold {
+      display: inline-block;
+      padding: 10px 24px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-outline-gold:hover { background: var(--gold); color: var(--navy); }
+
+    .hero-rule {
+      position: absolute;
+      bottom: 48px;
+      left: 48px;
+      right: 48px;
+      height: 1px;
+      background: var(--divider);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 100px 48px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.66rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 48px;
+      line-height: 1.15;
+    }
+
+    .section-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--divider);
+      margin: 0 auto;
+      max-width: 1100px;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--grey);
+      margin-bottom: 20px;
+      font-size: 0.98rem;
+    }
+
+    .about-text p:first-child {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .value-item {
+      border: 1px solid var(--divider);
+      padding: 20px;
+    }
+
+    .value-item h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .value-item p {
+      font-size: 0.82rem !important;
+      margin: 0 !important;
+    }
+
+    /* CASE STUDY */
+    #casestudy {
+      max-width: 1100px;
+    }
+
+    .case-intro {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 48px;
+      margin-bottom: 56px;
+      align-items: start;
+    }
+
+    .case-intro-lead {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      color: var(--white);
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .case-intro p {
+      color: var(--grey);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .case-facts {
+      border: 1px solid var(--divider);
+      padding: 28px;
+      background: var(--navy-mid);
+    }
+
+    .case-fact {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .case-fact:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+
+    .case-fact-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .case-fact-value {
+      font-size: 0.88rem;
+      color: var(--white);
+    }
+
+    .decision {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 32px;
+      padding: 36px 0;
+      border-top: 1px solid var(--divider);
+    }
+
+    .decision:last-of-type { border-bottom: 1px solid var(--divider); }
+
+    .decision-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      padding-top: 6px;
+    }
+
+    .decision h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      color: var(--white);
+      font-weight: 600;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .decision p {
+      font-size: 0.92rem;
+      color: var(--grey);
+    }
+
+    .decision .why {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--brick);
+      margin-bottom: 4px;
+      margin-top: 14px;
+    }
+
+    .case-outcome {
+      margin-top: 56px;
+      border-left: 3px solid var(--gold);
+      background: var(--navy-mid);
+      padding: 32px 36px;
+    }
+
+    .case-outcome h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      color: var(--gold-light);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .case-outcome p {
+      font-size: 0.95rem;
+      color: var(--grey);
+      margin-bottom: 12px;
+    }
+
+    .case-outcome p:last-child { margin-bottom: 0; }
+
+    /* RESUME */
+    .resume-section { margin-bottom: 48px; }
+
+    .resume-section-title {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.66rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .resume-entry {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+
+    .resume-entry-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    .resume-entry-org {
+      font-size: 0.85rem;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+    }
+
+    .resume-entry-date {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--grey);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .resume-entry ul {
+      list-style: none;
+      margin-top: 8px;
+    }
+
+    .resume-entry ul li {
+      font-size: 0.88rem;
+      color: var(--grey);
+      padding-left: 18px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+
+    .resume-entry ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.72em;
+      width: 8px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    /* LEADERSHIP */
+    .experience-entry {
+      border: 1px solid var(--divider);
+      padding: 36px;
+      margin-bottom: 24px;
+      position: relative;
+      transition: border-color 0.2s;
+    }
+
+    .experience-entry:hover { border-color: var(--gold); }
+
+    .experience-entry::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 0;
+      background: var(--gold);
+      transition: height 0.3s;
+    }
+
+    .experience-entry:hover::before { height: 100%; }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .exp-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    .exp-tag {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: var(--gold);
+      padding: 4px 12px;
+      font-weight: 500;
+    }
+
+    .exp-body {
+      font-size: 0.9rem;
+      color: var(--grey);
+    }
+
+    /* WORK SAMPLES */
+    .project-type {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .project-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+      font-weight: 600;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .skill-tag {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: 1px solid var(--divider);
+      color: var(--grey);
+      padding: 4px 10px;
+    }
+
+    .project-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* EDUCATION */
+    .edu-entry {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 32px;
+      align-items: start;
+      margin-bottom: 40px;
+    }
+
+    .edu-year {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 1rem;
+      color: var(--gold);
+      font-weight: 500;
+      line-height: 1.4;
+      min-width: 80px;
+    }
+
+    .edu-details h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .edu-details .edu-school {
+      font-size: 0.85rem;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+    }
+
+    .edu-details p {
+      font-size: 0.88rem;
+      color: var(--grey);
+    }
+
+    /* CONTACT */
+    #contact {
+      background: var(--navy-mid);
+    }
+
+    .contact-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 100px 48px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .contact-text p {
+      font-size: 1rem;
+      color: var(--grey);
+      margin-bottom: 16px;
+    }
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+      color: var(--white);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .contact-item:hover { color: var(--gold); }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--divider);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-item-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 2px;
+      font-weight: 500;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 32px 48px;
+      border-top: 1px solid var(--divider);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--grey);
+      letter-spacing: 0.1em;
+    }
+
+    /* FADE IN */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .fade-in { opacity: 1; transform: none; transition: none; }
+      .experience-entry::before { transition: none; }
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 860px) {
+      nav { padding: 0 20px; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0; right: 0;
+        background: rgba(11, 21, 34, 0.98);
+        border-bottom: 1px solid var(--divider);
+        flex-direction: column;
+        gap: 0;
+        padding: 12px 0;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links li { padding: 12px 24px; }
+      .nav-toggle { display: block; }
+      section { padding: 70px 20px; }
+      #home { padding: 100px 20px 60px; }
+      .about-grid, .contact-grid, .values-grid, .case-intro { grid-template-columns: 1fr; }
+      .resume-entry { grid-template-columns: 1fr; }
+      .resume-entry-date { text-align: left; }
+      .edu-entry { grid-template-columns: 1fr; gap: 8px; }
+      .decision { grid-template-columns: 1fr; gap: 8px; }
+      .hero-stats { flex-wrap: wrap; }
+      .hero-stat { flex: 1 1 50%; border-bottom: 1px solid var(--divider); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#home">Shane E. Newman</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">Menu</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#casestudy">Case Study</a></li>
+      <li><a href="#leadership">Results</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#samples">Work Samples</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" style="max-width:100%; padding-left:48px; padding-right:48px;">
+    <p class="hero-eyebrow">Operations &middot; Strategy &middot; Team Development</p>
+    <h1 class="hero-name">Shane E. Newman</h1>
+    <p class="hero-title">Operations &amp; Strategy Leader</p>
+    <p class="hero-statement">
+      I improve systems, develop accountable teams, and drive measurable organizational performance. Over 22 years of leadership, I have used strategic planning, process improvement, and disciplined execution to help organizations increase efficiency, strengthen reliability, and achieve sustainable results.
+    </p>
+    <div class="hero-cta">
+      <a href="#casestudy" class="btn-primary">See How I Work</a>
+      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <p class="hero-stat-val">22+</p>
+        <p class="hero-stat-label">Years of Leadership</p>
+      </div>
+      <div class="hero-stat">
+        <p class="hero-stat-val">500</p>
+        <p class="hero-stat-label">Personnel Led</p>
+      </div>
+      <div class="hero-stat">
+        <p class="hero-stat-val">$372M</p>
+        <p class="hero-stat-label">Assets Managed</p>
+      </div>
+      <div class="hero-stat">
+        <p class="hero-stat-val">$800K</p>
+        <p class="hero-stat-label">Cost Avoidance</p>
+      </div>
+    </div>
+    <div class="hero-rule"></div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label fade-in">01 / About</p>
+    <h2 class="section-title fade-in">Professional<br>Introduction</h2>
+    <div class="about-grid">
+      <div class="fade-in" style="width:100%;">
+        <img src="https://lh3.googleusercontent.com/d/1VFL8-yBoOPD2Az7RykoINM2J_QiIFpYV" alt="Shane E. Newman" style="width:100%; display:block; border:1px solid rgba(200,169,110,0.25);" />
+      </div>
+      <div class="about-text fade-in">
+        <p>I am an operations and strategy leader with a background in military service, bringing a disciplined, results-driven approach to leadership and organizational performance.</p>
+        <p>My career has been defined by a commitment to building accountable teams, streamlining complex processes, and delivering measurable outcomes under pressure. I believe that strong organizations are built on clear communication, disciplined execution, and a culture of continuous improvement.</p>
+        <p>I bring proven skills in strategic planning, resource coordination, team development, and institutional process design, and I am focused on roles where I can shape strategy and develop the people who execute it.</p>
+        <div class="values-grid">
+          <div class="value-item">
+            <h4>Strategic Planning</h4>
+            <p>Translating organizational goals into actionable, measurable plans.</p>
+          </div>
+          <div class="value-item">
+            <h4>Process Improvement</h4>
+            <p>Identifying inefficiencies and building systems that last.</p>
+          </div>
+          <div class="value-item">
+            <h4>Team Development</h4>
+            <p>Building accountable, high-performing teams through coaching and trust.</p>
+          </div>
+          <div class="value-item">
+            <h4>Disciplined Execution</h4>
+            <p>Delivering reliable results through structured, focused effort.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CASE STUDY -->
+  <section id="casestudy">
+    <p class="section-label fade-in">02 / Case Study</p>
+    <h2 class="section-title fade-in">Designing a Bias-Resistant<br>Selection Process</h2>
+
+    <div class="case-intro fade-in">
+      <div>
+        <p class="case-intro-lead">In my final assignment, I identified a problem most organizations never fix: selection outcomes depended on who happened to run the interview. I rebuilt the entire process so the standard belonged to the institution, not the individual.</p>
+        <p>At a senior military leadership academy, instructors are entrusted with developing experienced leaders. Selecting them was high-stakes, but the process varied with each senior panel member. The same candidate could succeed or fail depending on which board they drew. That inconsistency was not a style difference. It was a process failure.</p>
+        <p>I designed a full-lifecycle behavioral selection process, from application screening through post-board feedback, and delivered it to executive leadership as a complete, defensible package. What follows are the design decisions that made it work, and the reasoning behind each one.</p>
+      </div>
+      <div class="case-facts">
+        <div class="case-fact">
+          <p class="case-fact-label">Role</p>
+          <p class="case-fact-value">Architect and author, delivered to executive leadership</p>
+        </div>
+        <div class="case-fact">
+          <p class="case-fact-label">Problem</p>
+          <p class="case-fact-value">Inconsistent selection outcomes driven by individual interviewers</p>
+        </div>
+        <div class="case-fact">
+          <p class="case-fact-label">Scope</p>
+          <p class="case-fact-value">Seven-stage lifecycle: screening, demonstration, structured interview, scoring, deliberation, feedback, records</p>
+        </div>
+        <div class="case-fact">
+          <p class="case-fact-label">Foundation</p>
+          <p class="case-fact-value">Behavioral interviewing (STAR+L), weighted competencies, structured scoring</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="decision fade-in">
+      <p class="decision-num">D-01</p>
+      <div>
+        <h3>Assess demonstrated behavior, not stated values</h3>
+        <p>Every interview question requires a specific past event told in a structured format: Situation, Task, Action, Result, and the Lesson that changed how the candidate leads now. The panel does not accept hypotheticals or leadership philosophy.</p>
+        <p class="why">Why</p>
+        <p>Anyone can describe good leadership. Only past behavior predicts future behavior, and adding the Lesson element tests whether the candidate actually grew from the experience or just survived it.</p>
+      </div>
+    </div>
+
+    <div class="decision fade-in">
+      <p class="decision-num">D-02</p>
+      <div>
+        <h3>Make integrity a hard disqualifier</h3>
+        <p>Five competencies are scored and weighted, but a disqualifying score in integrity ends the candidacy regardless of performance everywhere else. Any panel member can raise the concern at any time.</p>
+        <p class="why">Why</p>
+        <p>The role develops people. A brilliant instructor with a character deficiency is not a reduced asset. He is a liability multiplied across every person he teaches. Weighting cannot express that. Only a veto can.</p>
+      </div>
+    </div>
+
+    <div class="decision fade-in">
+      <p class="decision-num">D-03</p>
+      <div>
+        <h3>Build the challenge into the process instead of hoping it happens</h3>
+        <p>Every candidate leads a live discussion with the panel, and at a planned moment a deliberately junior panel member pushes back or plays the person in the room who knows more. This is briefed in advance and happens every time.</p>
+        <p class="why">Why</p>
+        <p>The job requires influencing experienced people who will challenge you. Most interviews leave that test to chance. I made it a repeatable, observable event, and gave the junior member a real scoring lane so their perspective could not be dismissed.</p>
+      </div>
+    </div>
+
+    <div class="decision fade-in">
+      <p class="decision-num">D-04</p>
+      <div>
+        <h3>Score independently, then brief junior to senior</h3>
+        <p>Every panel member records their scores before any discussion begins, and scores do not change once discussion starts. Members then brief their assessments in junior-to-senior order, with the senior member speaking last.</p>
+        <p class="why">Why</p>
+        <p>These are two separate bias controls. Independent scoring stops members from drifting toward the senior opinion. Junior-first briefing stops them from softening what they say out loud after a senior voice has framed the candidate. Each control protects something different, and both are required.</p>
+      </div>
+    </div>
+
+    <div class="decision fade-in">
+      <p class="decision-num">D-05</p>
+      <div>
+        <h3>Calibrate the standard before anyone sits a board</h3>
+        <p>Norming runs in two layers. Leadership and all senior panel members periodically agree, out loud, on what strong, weak, and disqualifying answers look like. Then each individual board holds a pre-brief the day before it convenes.</p>
+        <p class="why">Why</p>
+        <p>A board that convenes without calibration sets the standard on the spot, which is the root cause of inconsistency. The two layers make separate boards consistent with each other and each board consistent within itself, so a personnel change never quietly resets the standard.</p>
+      </div>
+    </div>
+
+    <div class="decision fade-in">
+      <p class="decision-num">D-06</p>
+      <div>
+        <h3>Produce one accountable recommendation, not a vote tally</h3>
+        <p>The panel informs the decision, but the recommendation belongs to a single senior member, with a written basis sufficient to reconstruct the decision from the file a year later. Only the organization's director can override it.</p>
+        <p class="why">Why</p>
+        <p>Consensus diffuses accountability and lets a strong personality sway a weak panel. One name on the recommendation gives the institution one person to hold responsible and one decision to review, which is what accountability actually means.</p>
+      </div>
+    </div>
+
+    <div class="decision fade-in">
+      <p class="decision-num">D-07</p>
+      <div>
+        <h3>Treat non-selected candidates as people worth developing</h3>
+        <p>Feedback to non-selects is delivered by leadership only, framed against the standard in specific, developmental terms. The phrase "not a good fit" is banned from the process.</p>
+        <p class="why">Why</p>
+        <p>"Not a good fit" tells a developing leader nothing they can act on and reads as personal judgment, which is how grievances begin. Specific feedback treats every candidate the way the process asks instructors to treat every student, and that development compounds across the whole organization.</p>
+      </div>
+    </div>
+
+    <div class="case-outcome fade-in">
+      <h3>The Outcome</h3>
+      <p>The process was delivered to executive leadership as a complete package: governance, competency framework, scoring rubrics, interview banks, and every worksheet needed to run a board without me in the room. That was the point. A standard that depends on its author is just another version of the original problem.</p>
+      <p>The design thinking is mine and I am glad to walk through any of it in depth. The document itself is internal to the Marine Corps, which is exactly how I treat proprietary work.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- LEADERSHIP / RESULTS -->
+  <section id="leadership">
+    <p class="section-label fade-in">03 / Results</p>
+    <h2 class="section-title fade-in">Leadership<br>In Practice</h2>
+
+    <div class="experience-entry fade-in">
+      <div class="exp-header">
+        <p class="exp-title">Enterprise-Scale Logistics Execution</p>
+        <span class="exp-tag">Planning &amp; Execution</span>
+      </div>
+      <p class="exp-body">
+        As Director of Logistics &amp; Operations, I planned and executed the cross-country transport of 238 personnel, 2,482 assets valued at $372M, and 183 cargo containers across 2,400+ miles with no established playbook. Working through coordinated rail and convoy operations, I achieved 100% on-time delivery with zero service disruptions. I also unified logistics coordination across 5,750 personnel from five independent partner organizations, enabling the movement of 27,000+ tons of cargo and 34,000+ passengers across 145,000+ miles without a single interruption. This operation demonstrated my ability to plan, resource, and execute complex multi-site operations under pressure.
+      </p>
+    </div>
+
+    <div class="experience-entry fade-in">
+      <div class="exp-header">
+        <p class="exp-title">Digital Process Transformation</p>
+        <span class="exp-tag">Process Improvement</span>
+      </div>
+      <p class="exp-body">
+        Identifying that a manual participant intake process was consuming 15 minutes per person across 1,000+ annual participants, I designed and implemented a centralized QR-based digital platform to replace it. The result was a 66% reduction in processing time and approximately 320 staff hours reclaimed per year. Simultaneously, I designed enterprise-wide performance metrics and feedback processes where none previously existed across 36 personnel, achieving a 100% score on the formal organizational inspection. These initiatives reflect my broader approach to operations: identify the inefficiency, build a scalable solution, and measure the outcome.
+      </p>
+    </div>
+
+    <div class="experience-entry fade-in">
+      <div class="exp-header">
+        <p class="exp-title">Team Turnaround &amp; Development</p>
+        <span class="exp-tag">Team Development</span>
+      </div>
+      <p class="exp-body">
+        When I assumed leadership of my current organization, I inherited a team with below-average performance ratings and one member on a formal improvement plan. Through structured coaching, clear accountability standards, and individualized development, I transformed it into the highest-rated team in the organization, the first top performance rating for this role in over two years. I also built a succession program from scratch, advancing seven team members into higher certification levels and producing multiple award recipients. Earlier in my career, I conducted 306 formal assessments with individualized development plans, advancing 33 personnel into senior and master-level designations. These experiences reflect my core belief that strong teams are built through intentional development, not just selection.
+      </p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- RESUME -->
+  <section id="resume">
+    <p class="section-label fade-in">04 / Resume</p>
+    <h2 class="section-title fade-in">Experience &amp;<br>Qualifications</h2>
+
+    <div class="fade-in" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:32px; flex-wrap:wrap; gap:12px;">
+      <p style="color:var(--grey); font-size:0.9rem;">Full resume available to view or download below.</p>
+      <a href="Shane_Newman_Resume.pdf" target="_blank" class="btn-primary" style="padding:10px 24px;">Download Resume</a>
+    </div>
+
+    <div class="fade-in" style="border:1px solid var(--divider); overflow:hidden; margin-bottom:48px;">
+      <iframe src="Shane_Newman_Resume.pdf" width="100%" height="600" style="border:none; display:block;" loading="lazy" title="Shane E. Newman Resume"></iframe>
+    </div>
+
+    <div class="resume-section fade-in">
+      <p class="resume-section-title">Professional Experience</p>
+
+      <div class="resume-entry">
+        <div>
+          <p class="resume-entry-title">Director of Operations</p>
+          <p class="resume-entry-org">United States Marine Corps &middot; Jacksonville, NC</p>
+          <ul>
+            <li>Lead an enterprise learning and development organization serving 1,000+ professionals annually across international and domestic partners, with ownership of operations, workforce development, digital systems, and a $2M annual operating budget.</li>
+            <li>Transformed a team carrying below-average ratings and a member on a formal improvement plan into the highest-rated team in the organization through structured coaching, accountability, and targeted development.</li>
+            <li>Standardized evaluation and feedback processes across 36 personnel, creating the consistency and documentation the organization relied on to make promotion and development decisions.</li>
+            <li>Replaced a manual intake process that consumed 15 minutes per participant with a centralized QR-based digital platform, cutting processing time by 66% and reclaiming roughly 320 staff hours per year.</li>
+            <li>Lead and develop 12 instructional staff who have collectively supported more than 2,800 professionals, building succession pathways that advanced seven team members into higher certification levels.</li>
+            <li>Established a data-driven curriculum review cycle that closed recurring workforce knowledge gaps and raised average assessment scores by 9%.</li>
+          </ul>
+        </div>
+        <p class="resume-entry-date">Jan 2023 to Present</p>
+      </div>
+
+      <div class="resume-entry">
+        <div>
+          <p class="resume-entry-title">Director of Logistics &amp; Operations</p>
+          <p class="resume-entry-org">United States Marine Corps &middot; Jacksonville, NC</p>
+          <ul>
+            <li>Selected to fill a role normally reserved for leaders two levels more senior, directing operations, supply chain, and organizational performance for a 500-person organization across transportation networks, resource allocation, and multi-site distribution.</li>
+            <li>Planned and executed the cross-country transport of 238 personnel, 2,482 assets valued at $372M, and 183 cargo containers across 2,400+ miles with no established playbook, achieving 100% on-time delivery through coordinated rail and convoy operations.</li>
+            <li>Assumed acting executive leadership for 102 days, directing two concurrent overseas operational initiatives, a 672-mile humanitarian support convoy, and administrative continuity for 268 personnel while sustaining full mission execution throughout.</li>
+            <li>Unified logistics coordination across 5,750 personnel from five independent domestic and international partner organizations with no shared planning structure, enabling the movement of 27K+ tons of cargo and 34K+ passengers across 145K+ miles without a single missed movement.</li>
+            <li>Shifted from commercial long-haul trucking to consolidated rail operations to eliminate cost volatility, generating $700K in cost avoidance while improving end-to-end shipment visibility across the network.</li>
+            <li>Stabilized an underperforming operations division during a concurrent leadership transition by implementing performance standards and accountability controls, restoring full operational tempo within 4 months and passing two organizational evaluations.</li>
+          </ul>
+        </div>
+        <p class="resume-entry-date">Oct 2019 to Dec 2022</p>
+      </div>
+
+      <div class="resume-entry">
+        <div>
+          <p class="resume-entry-title">Senior Training &amp; Development Manager</p>
+          <p class="resume-entry-org">United States Marine Corps &middot; St. Robert, MO</p>
+          <ul>
+            <li>Led training and workforce operations for a 126-member professional development organization delivering concurrent certification programs to up to 560 participants at a time. Named Organization-Wide Trainer of the Year across eight career fields.</li>
+            <li>Handpicked as Deputy Director of the regional training academy after identifying that new staff lacked a standardized certification process; personally evaluated and certified 93 team members across all specialties, establishing a repeatable onboarding framework adopted as the organizational standard.</li>
+            <li>Conducted 306 formal assessments with individualized development plans across a 138-member staff, advancing 33 personnel into senior and master-level designations, including 6 who earned the top credential on their first attempt, a distinction fewer than 15% of candidates achieve.</li>
+            <li>Redesigned the instructor evaluation process across 69 curriculum files and three concurrent programs totaling 768+ academic hours per cycle, eliminating inconsistent grading and driving adoption as the organization-wide standard.</li>
+            <li>Delivered 2,289 hours of classroom and applied instruction, certifying 574 operators with zero safety violations.</li>
+          </ul>
+        </div>
+        <p class="resume-entry-date">Mar 2016 to Sep 2019</p>
+      </div>
+    </div>
+
+    <div class="resume-section fade-in">
+      <p class="resume-section-title">Education</p>
+      <div class="resume-entry">
+        <div>
+          <p class="resume-entry-title">Bachelor of Arts in Management, Summa Cum Laude</p>
+          <p class="resume-entry-org">American Military University</p>
+        </div>
+        <p class="resume-entry-date">2026</p>
+      </div>
+    </div>
+
+    <div class="resume-section fade-in">
+      <p class="resume-section-title">Certifications &amp; Professional Development</p>
+      <div class="project-skills" style="margin-top:0;">
+        <span class="skill-tag">Executive Leadership Course, U.S. Navy (Distinguished Graduate)</span>
+        <span class="skill-tag">PMP ATP Bootcamp</span>
+        <span class="skill-tag">Lean Six Sigma Green Belt</span>
+        <span class="skill-tag">Master Instructional Designer &amp; Faculty Lead</span>
+        <span class="skill-tag">Curriculum Developer (ADDIE/SAT)</span>
+        <span class="skill-tag">ERP &amp; Logistics Systems Integration</span>
+        <span class="skill-tag">MPF Staff Planning</span>
+      </div>
+    </div>
+
+    <div class="resume-section fade-in">
+      <p class="resume-section-title">Core Competencies</p>
+      <div class="project-skills" style="margin-top:0;">
+        <span class="skill-tag">Organizational Leadership &amp; Team Development</span>
+        <span class="skill-tag">Strategic Operations Planning</span>
+        <span class="skill-tag">Performance Management &amp; Accountability</span>
+        <span class="skill-tag">Digital Transformation &amp; Process Improvement</span>
+        <span class="skill-tag">Multi-Site Logistics &amp; Supply Chain</span>
+        <span class="skill-tag">Cross-Functional &amp; Stakeholder Engagement</span>
+        <span class="skill-tag">Root Cause Analysis</span>
+        <span class="skill-tag">High-Stakes Decision-Making</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- WORK SAMPLES -->
+  <section id="samples">
+    <p class="section-label fade-in">05 / Work Samples</p>
+    <h2 class="section-title fade-in">Selected<br>Documents</h2>
+
+    <!-- LEADERSHIP PHILOSOPHY -->
+    <div class="fade-in" style="margin-bottom:64px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:16px; flex-wrap:wrap; gap:12px;">
+        <div>
+          <p class="project-type">Professional Document / Leadership Framework</p>
+          <h3 class="project-title" style="margin-bottom:8px;">Leadership Philosophy</h3>
+          <p style="color:var(--grey); font-size:0.9rem; max-width:680px;">A standalone leadership philosophy built on five core principles: Trust, Respect, Strategic Alignment, Effort, and Maturity. This document answers not just what I have accomplished as a leader, but how, giving decision-makers direct insight into the values and posture I bring to every team I lead.</p>
+        </div>
+        <a href="Shane_Newman_Leadership_Philosophy.pdf" target="_blank" class="btn-outline-gold">Open Full Document</a>
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
+        <span class="skill-tag">Leadership Identity</span>
+        <span class="skill-tag">Professional Disposition</span>
+        <span class="skill-tag">Ethical Framework</span>
+        <span class="skill-tag">Team Development</span>
+      </div>
+      <div style="border:1px solid var(--divider); overflow:hidden;">
+        <iframe src="Shane_Newman_Leadership_Philosophy.pdf" width="100%" height="500" style="border:none; display:block;" loading="lazy" title="Leadership Philosophy"></iframe>
+      </div>
+    </div>
+
+    <div style="width:100%; height:1px; background:var(--divider); margin-bottom:64px;"></div>
+
+    <!-- FORD PAPER -->
+    <div class="fade-in" style="margin-bottom: 64px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:16px; flex-wrap:wrap; gap:12px;">
+        <div>
+          <p class="project-type">Written Analysis / Strategic Management</p>
+          <h3 class="project-title" style="margin-bottom:8px;">Ford Motor Company Strategic Evaluation</h3>
+          <p style="color:var(--grey); font-size:0.9rem; max-width:680px;">A comprehensive strategic analysis evaluating Ford's leadership approach, stakeholder relationships, competitive advantages, and organizational restructuring into Ford Blue, Ford Model e, and Ford Pro. Demonstrates the ability to apply strategic management frameworks to executive-level decision-making under regulatory and financial pressure.</p>
+        </div>
+        <a href="Shane_Newman_Company_Evaluation.pdf" target="_blank" class="btn-outline-gold">Open Full Document</a>
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
+        <span class="skill-tag">Strategic Analysis</span>
+        <span class="skill-tag">Stakeholder Management</span>
+        <span class="skill-tag">Competitive Advantage</span>
+        <span class="skill-tag">Ethical Reasoning</span>
+      </div>
+      <div style="border:1px solid var(--divider); overflow:hidden;">
+        <iframe src="Shane_Newman_Company_Evaluation.pdf" width="100%" height="500" style="border:none; display:block;" loading="lazy" title="Ford Strategic Evaluation"></iframe>
+      </div>
+    </div>
+
+    <div style="width:100%; height:1px; background:var(--divider); margin-bottom:64px;"></div>
+
+    <!-- SILVERCONNECT -->
+    <div class="fade-in" style="margin-bottom:16px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:16px; flex-wrap:wrap; gap:12px;">
+        <div>
+          <p class="project-type">Presentation / Business Strategy</p>
+          <h3 class="project-title" style="margin-bottom:8px;">SilverConnect SWOT Analysis</h3>
+          <p style="color:var(--grey); font-size:0.9rem; max-width:680px;">A strategic SWOT analysis and business feasibility evaluation for SilverConnect Tech Support, a technology support venture serving adults 50+ in Jacksonville, NC. Covers market segmentation across direct consumer and B2B buyers, a three-tiered pricing model, a lean $5,000 startup structure with break-even at 17 service visits per month, and four strategic priorities culminating in a go recommendation. Demonstrates the ability to build strategy from the ground up and present recommendations to executive decision-makers.</p>
+        </div>
+        <a href="Shane_Newman_SWOT_Analysis.pdf" target="_blank" class="btn-outline-gold">Open Full Presentation</a>
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
+        <span class="skill-tag">SWOT Analysis</span>
+        <span class="skill-tag">Business Feasibility</span>
+        <span class="skill-tag">Financial Modeling</span>
+        <span class="skill-tag">Strategic Recommendations</span>
+      </div>
+      <div style="border:1px solid var(--divider); overflow:hidden;">
+        <iframe src="Shane_Newman_SWOT_Analysis.pdf" width="100%" height="500" style="border:none; display:block;" loading="lazy" title="SilverConnect SWOT Analysis"></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <p class="section-label fade-in">06 / Education &amp; Development</p>
+    <h2 class="section-title fade-in">Academic &amp; Professional<br>Development</h2>
+
+    <div class="edu-entry fade-in">
+      <p class="edu-year">2026</p>
+      <div class="edu-details">
+        <h3>Bachelor of Arts in Management</h3>
+        <p class="edu-school">American Military University</p>
+        <p>Focused on operations management, strategic planning, and organizational leadership, culminating in a professional portfolio and career development plan.</p>
+      </div>
+    </div>
+
+    <div class="edu-entry fade-in">
+      <p class="edu-year">2026</p>
+      <div class="edu-details">
+        <h3>Lean Six Sigma Green Belt Level II</h3>
+        <p class="edu-school">Professional Certification</p>
+        <p>Applied Lean Six Sigma methodology to identify and eliminate process waste, reduce variability, and drive measurable performance improvements across organizational operations.</p>
+      </div>
+    </div>
+
+    <div class="edu-entry fade-in">
+      <p class="edu-year">2024</p>
+      <div class="edu-details">
+        <h3>U.S. Navy Senior Enlisted Academy, Distinguished Graduate</h3>
+        <p class="edu-school">United States Navy</p>
+        <p>Selective senior executive program in organizational strategy, leadership, and national security. Fewer than 5% of eligible leaders are selected. Graduated with distinction, reflecting a commitment to continuous professional development at the executive level.</p>
+      </div>
+    </div>
+
+    <div class="edu-entry fade-in">
+      <p class="edu-year">2017</p>
+      <div class="edu-details">
+        <h3>Master Instructional Designer &amp; Faculty Lead Certification</h3>
+        <p class="edu-school">United States Marine Corps</p>
+        <p>Certification in instructional design, curriculum development, and faculty leadership, supporting enterprise-wide training programs serving up to 560 participants per cycle.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CONTACT -->
+  <div id="contact">
+    <div class="contact-inner">
+      <p class="section-label fade-in">07 / Contact</p>
+      <h2 class="section-title fade-in">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-text fade-in">
+          <p>Thank you for taking the time to review my portfolio. I am actively pursuing operations and strategy leadership roles where I can apply my background in strategic planning, team development, and disciplined execution.</p>
+          <p>I welcome professional connections, networking conversations, and inquiries about my background and career goals.</p>
+        </div>
+        <div class="contact-items fade-in">
+          <a href="mailto:shane.e.newman@pm.me" class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m2 7 10 7 10-7"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-item-label">Email</span>
+              shane.e.newman@pm.me
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/shane-newman" target="_blank" class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                <path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 10v7"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-item-label">LinkedIn</span>
+              linkedin.com/in/shane-newman
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Shane E. Newman &nbsp;&middot;&nbsp; Operations &amp; Strategy Leader
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
