@@ -353,11 +353,11 @@
 
     .case-intro {
       display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 48px;
+      grid-template-columns: 1fr;
+      gap: 40px;
       margin-bottom: 56px;
-      align-items: start;
     }
+    
 
     .case-intro-lead {
       font-family: 'Jost', sans-serif;
@@ -378,16 +378,20 @@
       border: 1px solid var(--divider);
       padding: 28px;
       background: var(--navy-mid);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
     }
 
     .case-fact {
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--divider);
+      margin-bottom: 0;
+      padding-bottom: 0;
+      padding-right: 28px;
+      border-right: 1px solid var(--divider);
     }
 
-    .case-fact:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
-
+    .case-fact:last-child { padding-right: 0; border-right: none; }
+    
     .case-fact-label {
       font-family: 'IBM Plex Mono', monospace;
       font-size: 0.62rem;
@@ -776,7 +780,9 @@
       .nav-toggle { display: block; }
       section { padding: 70px 20px; }
       #home { padding: 100px 20px 60px; }
-      .about-grid, .contact-grid, .values-grid, .case-intro { grid-template-columns: 1fr; }
+      .about-grid, .contact-grid, .values-grid, .case-intro, .case-facts { grid-template-columns: 1fr; }
+      .case-fact { padding-right: 0; border-right: none; border-bottom: 1px solid var(--divider); padding-bottom: 20px; }
+      .case-fact:last-child { border-bottom: none; padding-bottom: 0; }
       .resume-entry { grid-template-columns: 1fr; }
       .resume-entry-date { text-align: left; }
       .edu-entry { grid-template-columns: 1fr; gap: 8px; }
@@ -843,7 +849,7 @@
     <p class="section-label fade-in">01 / About</p>
     <h2 class="section-title fade-in">Professional<br>Introduction</h2>
     <div class="about-grid">
-      <div class="fade-in" style="width:100%;">
+      <div class="fade-in" style="width:100%; position:sticky; top:96px;">
         <img src="AMU.jpg" alt="Shane E. Newman" style="width:100%; display:block; border:1px solid rgba(200,169,110,0.25);" />
       </div>
       <div class="about-text fade-in">
