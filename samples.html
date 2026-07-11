@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Additional Work Samples | Shane E. Newman</title>
+  <meta name="description" content="Secondary analytical writing samples: a Ford Motor Company strategic assessment and a SilverConnect SWOT analysis." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">Shane E. Newman</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="case-study.html">Case Study</a></li>
+      <li><a href="highlights.html">Highlights</a></li>
+      <li><a href="approach.html">Approach</a></li>
+      <li><a href="samples.html" class="active">Samples</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <a href="index.html" class="breadcrumb fade-in">&larr; Back to Home</a>
+    <p class="page-subtitle fade-in">Additional Analytical Work</p>
+    <h1 class="page-title fade-in">Selected Writing Samples</h1>
+  </div>
+
+  <section style="padding-top:0;">
+    <p class="section-intro fade-in" style="margin-top:0;">Secondary analytical samples that demonstrate strategic and business-analysis skills outside my direct operational experience.</p>
+
+    <!-- FORD PAPER -->
+    <div class="fade-in" style="margin-bottom: 64px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:16px; flex-wrap:wrap; gap:12px;">
+        <div>
+          <p class="project-type">Academic Writing Sample / Corporate Strategy</p>
+          <h3 class="project-title" style="margin-bottom:8px;">Strategic Assessment: Ford Motor Company</h3>
+          <p style="color:var(--grey); font-size:0.9rem; max-width:680px;">A three-page brief assessing Ford's restructuring into Ford Blue, Ford Model e, and Ford Pro, covering leadership and organizational design, stakeholder pressures, competitive position, and four growth priorities ranked by strategic leverage.</p>
+          <p class="sample-disclaimer">Independent strategic analysis based on public information. Prepared as an academic writing sample, not for Ford Motor Company.</p>
+        </div>
+        <a href="Shane_Newman_Ford_Strategic_Brief.pdf" target="_blank" class="btn-outline-gold">Open Document</a>
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <span class="skill-tag">Strategic Analysis</span>
+        <span class="skill-tag">Stakeholder Management</span>
+        <span class="skill-tag">Competitive Advantage</span>
+      </div>
+      <div class="doc-preview">
+        <iframe src="Shane_Newman_Ford_Strategic_Brief.pdf" width="100%" height="500" loading="lazy" title="Strategic Assessment: Ford Motor Company"></iframe>
+      </div>
+    </div>
+
+    <div style="width:100%; height:1px; background:var(--divider); margin-bottom:64px;"></div>
+
+    <!-- SILVERCONNECT -->
+    <div class="fade-in">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:16px; flex-wrap:wrap; gap:12px;">
+        <div>
+          <p class="project-type">Presentation / Hypothetical Venture</p>
+          <h3 class="project-title" style="margin-bottom:8px;">SilverConnect SWOT Analysis</h3>
+          <p style="color:var(--grey); font-size:0.9rem; max-width:680px;">A strategic SWOT analysis and business-feasibility evaluation for a hypothetical technology-support venture serving adults 50+, covering market segmentation, pricing, a lean startup structure, and a go recommendation.</p>
+        </div>
+        <a href="Shane_Newman_SWOT_Analysis_SilverConnect_Tech_Support.pdf" target="_blank" class="btn-outline-gold">Open Presentation</a>
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <span class="skill-tag">SWOT Analysis</span>
+        <span class="skill-tag">Business Feasibility</span>
+        <span class="skill-tag">Financial Modeling</span>
+      </div>
+      <div class="doc-preview">
+        <iframe src="Shane_Newman_SWOT_Analysis_SilverConnect_Tech_Support.pdf" width="100%" height="500" loading="lazy" title="SilverConnect SWOT Analysis"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <div class="page-footer-nav">
+    <a href="approach.html" class="btn-secondary">&larr; Leadership Approach</a>
+    <a href="resume.html" class="btn-primary">Next: Resume &amp; Credentials &rarr;</a>
+  </div>
+
+  <footer>
+    &copy; 2026 Shane E. Newman &nbsp;&middot;&nbsp; Organizational Effectiveness &amp; Operations Leader
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
