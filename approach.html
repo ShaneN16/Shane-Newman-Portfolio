@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leadership Approach | Shane E. Newman</title>
+  <meta name="description" content="Shane E. Newman's leadership philosophy: Trust, Respect, Strategic Alignment, Development and Accountability, and Professional Judgment." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">Shane E. Newman</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="highlights.html">Results</a></li>
+      <li><a href="case-study.html">Case Study</a></li>
+      <li><a href="approach.html" class="active">Leadership Approach</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <a href="index.html" class="breadcrumb fade-in">&larr; Back to Home</a>
+    <p class="page-subtitle fade-in">Leadership Approach</p>
+    <h1 class="page-title fade-in">How I Lead</h1>
+  </div>
+
+  <section style="padding-top:0;">
+    <p class="philosophy-intro fade-in">My responsibility as a leader is to build a team that can make sound decisions, uphold high standards, and perform reliably without depending on my constant presence. I serve the people I lead while remaining fully accountable for the organization's mission, priorities, and results. These five principles have held constant across every role and organization I have led.</p>
+
+    <div class="fade-in">
+      <div class="principle-row">
+        <p class="principle-num">01</p>
+        <div>
+          <h3>Trust</h3>
+          <p class="principle-thesis">Trust grows through honesty, consistency, and follow-through &mdash; not through authority.</p>
+          <p class="principle-body">I communicate openly, surface problems early, and explain the reasoning behind decisions whenever circumstances allow. I expect the same in return: people should be able to raise concerns and admit mistakes without fear of being punished for candor. Trust does not remove accountability. It is what allows accountability to operate fairly.</p>
+        </div>
+      </div>
+
+      <div class="principle-row">
+        <p class="principle-num">02</p>
+        <div>
+          <h3>Respect</h3>
+          <p class="principle-thesis">Every person deserves to be treated with dignity, regardless of position or performance.</p>
+          <p class="principle-body">I listen before reaching conclusions and address problems directly, without diminishing the person raising them. Respect also requires candor &mdash; avoiding a hard conversation is not kindness when the team is suffering for it. I correct professionally, and I make sure every interaction preserves the other person's dignity.</p>
+        </div>
+      </div>
+
+      <div class="principle-row">
+        <p class="principle-num">03</p>
+        <div>
+          <h3>Strategic Alignment</h3>
+          <p class="principle-thesis">Teams perform best when they understand both the task and its purpose.</p>
+          <p class="principle-body">I connect daily work to organizational priorities, clarify decision rights, and build operating systems that translate strategy into consistent action. I want disagreement before a decision is made and full commitment after it &mdash; no side conversations, no partial buy-in. The goal is always a system that outlasts any one person, including me.</p>
+        </div>
+      </div>
+
+      <div class="principle-row">
+        <p class="principle-num">04</p>
+        <div>
+          <h3>Development &amp; Accountability</h3>
+          <p class="principle-thesis">Development and accountability are not competing responsibilities.</p>
+          <p class="principle-body">When performance falls short, I first determine why &mdash; unclear expectations, inadequate training, and lack of capability each require a different response. I provide clear standards, useful feedback, and a fair opportunity to improve. I also act decisively when someone repeatedly fails to meet expectations after receiving that support.</p>
+        </div>
+      </div>
+
+      <div class="principle-row">
+        <p class="principle-num">05</p>
+        <div>
+          <h3>Professional Judgment</h3>
+          <p class="principle-thesis">Knowing when to push back matters as much as knowing when to execute.</p>
+          <p class="principle-body">I raise concerns respectfully when direction creates unnecessary risk or lacks sufficient rationale, and I bring an alternative, not just an objection. Once a decision is made, I set my own preference aside and execute it fully. Speaking candidly and aligning completely are not in conflict. They happen in sequence.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-outcome fade-in" style="margin-top:8px;">
+      <p style="font-family:'Cormorant Garamond', serif; font-size:1.3rem; font-weight:400; color:var(--white); line-height:1.6; margin:0;">These principles do not change with scale. They apply whether I am leading twelve people or five hundred, in my first week in a role or my last.</p>
+    </div>
+
+    <div class="fade-in" style="margin-top:40px;">
+      <a href="Shane_Newman_Leadership_Philosophy.pdf" target="_blank" class="btn-outline-gold">Download the Full Philosophy (PDF)</a>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <div class="page-footer-nav">
+    <a href="case-study.html" class="btn-secondary">&larr; Case Study</a>
+    <a href="resume.html" class="btn-primary">Next: Resume &amp; Credentials &rarr;</a>
+  </div>
+
+  <footer>
+    &copy; 2026 Shane E. Newman &nbsp;&middot;&nbsp; Organizational Effectiveness &amp; Operations Leader
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
